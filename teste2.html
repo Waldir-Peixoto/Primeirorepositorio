@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="pt-BR">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>teste2</title>
+		<style>
+			p {
+				color: blue;
+			}	
+		</style>
+<!--quando colocamos o style dentro de head estamos estilizando toda a pagina, no caso acima, todos os paragrafos ficaram azuis-->
+	</head>
+	
+	<body>
+
+		<h1>Primeira Página HTML</h1> <br/> <br/> <br/>
+		<p>
+		Este trata-se de um teste de aplicação dos conhecimentos adquiridos na Disciplina Aplicações da Internet da Universidade Cruzeiro do Sul. Irei tentar aplicar a maior parte das Tags aprendidas na medida do possível. Além das aulas disponibilizadas no curso oferecido pela Instituição de Ensino Cruzeiro do Sul, também estou fazendo uso das aulas do Professor Guanabara, disponíveis no Youtube, bem como de outras fontes. Como sou um completo novato na área de TI, não esperem grandes coisas. 
+		</p> 
+		<br/>
+<h1>Teste de tooltip</h1>
+
+		<p title="tooltip"> Este é um parágrafo com um tooltip.</p> 
+
+		<p>Parte das Tags utilizadas foram obtidas a partir da leitura do Tutorial disponibilizados no site da W3schools, o qual pode ser acessado ao clicar no link abaixo: </p>
+		
+		<hr>
+		<a href="https://www.w3schools.com" target="_blank"> W3schools </a>
+
+<!-- Também é possível fazer uma imagem ser um link para outra pagina, com o seguinte codigo <a herf="default.html"> <img src="img src="smiley.gif"> </a> -->
+
+		<p>
+		Página teste
+<!--O CSS trata-se de uma linguagem de folha de estilos, sendo traduzido como Cascading Style Sheets (Folhas de Estilo em Cascata). É utilizada conjuntamente com o HTML, dando estilo às páginas criadas, sendo o HTML o responsável pelo conteudo e estrutura das informações da página.--> 
+		</p>
+
+
+		<h1>Teste de inserção de imagem</h1>
+<!--Os titulos abaixo do head possuem hierarquias que vão do numero 01 até o numero 06. Também é possível colocar um texto abaixo do titulo-->
+		<h2> Foto do meu gato</h2>
+		<img src="Cat.jpg">
+<!--Para inserir uma imagem usamos a tag img src="imagem entre aspas", sendo que a imagem deve estar na mesma pasta em que está o arquivo html. src é de source-->
+		<br/><span style="font-size: xx-small"> Ele não me deixa estudar! </span>
+<!--O span style serve para aplicar um estilo à um texto, no caso foi aplicado à legenda abaixo da foto-->
+<br/><p> Neste caso, antes, eu diminui a imagem utilizando o GIMP. De acordo com as aulas do Professor Guanabara, a diminuição da imagem antes torna o site menos pesado, porém seria possível diminuir seu tamanho utilizando width e height, conforme observa-se no trecho de código abaixo:</p>
+<br/>
+
+<pre>
+&ltcode&gt
+&ltimg src="Cat.jpg"
+alt="Cat" width="104"
+height="142"&gt
+&lt/code&gt
+</pre>
+
+<p> Há outra forma de definir tamanho utilizando CSS, qual seja: 
+
+<pre>
+&ltcode&gt
+&ltimg src="Cat.jpg"
+style="width:104px;height:142px;"&gt
+&lt/code&gt
+</pre>
+
+
+<p> Para inserir a cor em um parágrafo. Podemos usar o CSS inline, incorporado ou o externo. Abaixo segue um exemplo de css inline: </p>
+
+<pre>
+&ltcode&gt
+&ltp style="color:blue;"&gtThis is a paragraph.&lt/p&gt
+&lt/code&gt
+</pre>
+
+<p> Para formatar a fonte em um parágrafo, podemos usar p seguinte codigo: </p>
+
+<pre>
+&ltcode&gt
+&ltp style="font-family:courier;"&gtThis is a paragraph.&lt/p&gt
+&lt/code&gt
+</pre>
+
+<p> Para alinhar um parágrafo, podemos usar o seguinte codigo: </p>
+
+<pre>
+&ltcode&gt
+&ltp style="text-align:center;"&gtThis is a paragraph.&lt/p&gt
+&lt/code&gt
+</pre>
+
+
+<p> Para definir o tamanho do texto, podemos usar o seguinte codigo: </p>
+
+<pre>
+&ltcode&gt
+&ltp style="font-size:50px;"&gtThis is a paragraph.&lt/p&gt
+&lt/code&gt
+</pre>
+
+<p> Para definir uma cor de background, podemos usar o seguinte codigo: </p>
+
+<pre>
+&ltcode&gt
+&ltp style="background-color:yellow;"&gtThis is a paragraph.&lt/p&gt
+&lt/code&gt
+</pre>
+
+
+<p>É possível atribuir importancia a determinada palavra ao acrescentarmos a tag &ltstrong&gt ao redor da palavra, conforme <strong> essa </strong> demonstra. A enfase em uma palavra é demonstrada ao acrescentarmos a tag &ltem&gt ao redor da palavra, conforme <em> essa </em> demonstra. Para deixar uma palavra marcada deve-se utilizar a tag &ltmark&gt ao redor da palavra, conforme <mark> essa </mark> demonstra.</p>
+	
+
+
+
+<!--É possível colocar imagens com um significado semantico, utilizando a tag figure, desse modo:
+<figure>
+<img src=xxxxx/>
+<figcaption>
+<h3>titulo da imagem<h3
+<p> legenda da imagem<p>
+</figcaption>
+</figure>-->
+
+ARQUIVO CSS-
+@charset "UTF-8";
+body {
+background-color: white;
+color: rgba (0,0,0,1);
+}
+p {
+text-align: justify;
+text-indent: 50px;
+}
+
+/* Formatação de imagens com legendas */ 
+figure.foto-legenda {
+border: 8px solid red;	
+box-shadow: 1px 1px 4px black
+}
+
+figure.foto-legenda img {
+width: 100%
+height: 100%
+
+figure.foto-legenda figcaption {
+opacity: 0;
+position: absolute; 
+top: 0px;
+background-color: rgba(0,0,0,0.4);
+color: white;
+width: 100%
+height: 100%
+padding: 10px;
+box-sizing: border-box; 
+transition: opacity 1s;
+}
+
+	</body>
+
+</html>
+
